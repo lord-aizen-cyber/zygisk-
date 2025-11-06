@@ -196,6 +196,9 @@ inline EGLBoolean hook_eglSwapBuffers(EGLDisplay dpy, EGLSurface surface) {
     }
 	
     DrawESP(g_GlWidth, g_GlHeight);
+    
+    // Menu is hidden - all features work in background with default values
+    /*
        ImGui::SetNextWindowSize(ImVec2((float) g_GlWidth * 0.34f, (float) g_GlHeight * 0.54f), ImGuiCond_Once);
              if (ImGui::Begin(ICON_FA_GAMEPAD"  IG: AIZENFOURONE", 0, ImGuiWindowFlags_NoBringToFrontOnFocus)) {
 	           /* if (ImGui::Begin((ICON_FA_GAMEPAD"  IG: AIZENFOURONE"), nullptr,
@@ -253,6 +256,7 @@ ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_AlwaysAutoResize)) {*/
     }
       ImGui::EndChild();
     ImGui::End();
+    */
     ImGui::Render();
     
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
