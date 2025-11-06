@@ -197,7 +197,7 @@ inline EGLBoolean hook_eglSwapBuffers(EGLDisplay dpy, EGLSurface surface) {
 	
     DrawESP(g_GlWidth, g_GlHeight);
        ImGui::SetNextWindowSize(ImVec2((float) g_GlWidth * 0.34f, (float) g_GlHeight * 0.54f), ImGuiCond_Once);
-             if (ImGui::Begin(ICON_FA_GAMEPAD"  IG: AIZENFOURONE", 0, ImGuiWindowFlags_NoBringToFrontOnFocus)) {
+             if (false && ImGui::Begin(ICON_FA_GAMEPAD"  IG: AIZENFOURONE", 0, ImGuiWindowFlags_NoBringToFrontOnFocus)) {
 	           /* if (ImGui::Begin((ICON_FA_GAMEPAD"  IG: AIZENFOURONE"), nullptr,
 ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_AlwaysAutoResize)) {*/
         if (ImGui::BeginTabBar("Tab", ImGuiTabBarFlags_FittingPolicyScroll)) {
